@@ -1,29 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lem_in.c                                           :+:      :+:    :+:   */
+/*   lem_in.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgonon <mgonon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/30 17:37:18 by mgonon            #+#    #+#             */
-/*   Updated: 2018/01/30 22:23:29 by mgonon           ###   ########.fr       */
+/*   Created: 2018/01/30 19:07:36 by mgonon            #+#    #+#             */
+/*   Updated: 2018/01/30 20:40:14 by mgonon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem_in.h"
+#ifndef LEM_IN_H
+# define LEM_IN_H
+# include "libft/libft.h"
 
-// void parse_map(char **line)
-// {
-
-// }
-
-int main()
+typedef struct  s_room
 {
-    char *line;
+    int     nb;
+    int     x;
+    int     y;
+    int     start;
+    int     end;
+    char    *link;
+}               t_room;
 
-    while (get_next_line(0, &line))
-    {
-        printf("line = %s\n", line);
-    }
-    return (0);
-}
+
+
+// typedef struct  s_map
+// {
+//     int     antNb;
+//     t_room  room;
+// }               t_map;
+
+#endif
