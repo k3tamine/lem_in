@@ -6,7 +6,7 @@
 #    By: mgonon <mgonon@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/03 23:59:50 by mgonon            #+#    #+#              #
-#    Updated: 2017/10/13 15:33:28 by mgonon           ###   ########.fr        #
+#    Updated: 2018/01/31 17:14:30 by mgonon           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,6 +79,9 @@ SRC = ft_isalpha.c \
 	  ft_lstiter.c \
 	  ft_lstmap.c \
 	  ft_strnew_c.c \
+	  ft_strisdigit.c \
+	  ft_tablen.c \
+	  ft_tabdel.c \
 	  ft_itoa_base.c \
 	  get_next_line.c \
 	  ft_printf/fill_characters.c \

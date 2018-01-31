@@ -6,7 +6,7 @@
 /*   By: mgonon <mgonon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/30 19:07:36 by mgonon            #+#    #+#             */
-/*   Updated: 2018/01/31 15:35:26 by mgonon           ###   ########.fr       */
+/*   Updated: 2018/01/31 17:59:02 by mgonon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 typedef struct  s_room
 {
-    int     nb;
+    char	*name;
     int     x;
     int     y;
     int     start;
@@ -40,3 +40,32 @@ void    lem_exit(char *errmsg);
 // }               t_map;
 
 #endif
+
+
+
+// typedef struct  s_room
+// {
+//     char	*name;
+//     int     x;
+//     int     y;
+//     int     start;
+//     int     end;
+// 	s_room 	*next;
+// 	s_tube  *link;
+// }               t_room;
+
+// typedef struct  s_link
+// {
+// 	t_room *room;
+// 	t_link *next;
+// }               t_link;
+
+
+// while(t_room *room){
+// 	printf("%s", room->name);
+// 	while(room->link) {
+// 		print("%s", room->link->room->name)
+// 		room->link = room->link->next;
+// 	}
+// 	room = room->link->room;
+// }

@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lem_in.c                                           :+:      :+:    :+:   */
+/*   ft_tablen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgonon <mgonon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/30 17:37:18 by mgonon            #+#    #+#             */
-/*   Updated: 2018/01/31 16:56:18 by mgonon           ###   ########.fr       */
+/*   Created: 2018/01/31 17:08:29 by mgonon            #+#    #+#             */
+/*   Updated: 2018/01/31 17:09:35 by mgonon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lem_in.h"
+#include "libft.h"
 
-int	main(void)
+int		ft_tablen(char **mytab)
 {
-	int		ant_nb;
-	char	*line;
+	int		i;
 
-	if ((ant_nb = get_ant_nb()) == -1)
-		lem_exit("Wrong ant number\n");
-	printf("ant_nb = %d\n", ant_nb);
-	return (0);
+	if (!mytab || !*mytab)
+		return (0);
+	i = 0;
+	while (mytab[i])
+		++i;
+	return (i);
 }
