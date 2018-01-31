@@ -6,13 +6,18 @@
 /*   By: mgonon <mgonon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/30 19:07:36 by mgonon            #+#    #+#             */
-/*   Updated: 2018/01/30 20:40:14 by mgonon           ###   ########.fr       */
+/*   Updated: 2018/01/31 15:35:26 by mgonon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LEM_IN_H
 # define LEM_IN_H
-# include "libft/libft.h"
+# define MAXROOM	200
+# define ISROOM		42
+# define ISLINK		43
+# define ISCOMMENT	44
+# define ISBEGEND	45
+# include "../libft/libft.h"
 
 typedef struct  s_room
 {
@@ -24,6 +29,8 @@ typedef struct  s_room
     char    *link;
 }               t_room;
 
+int 	get_ant_nb(void);
+void    lem_exit(char *errmsg);
 
 
 // typedef struct  s_map
